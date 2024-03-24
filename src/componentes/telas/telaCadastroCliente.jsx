@@ -25,7 +25,7 @@ export default function TelaCadastroCliente(props) {
                 <Pagina>
                     <h1>Tela de Cadastro de Clientes</h1>
                     <br/>
-                    <h2>Formulário de cadastro de Clientes</h2>
+                    <h2>Formulário de Cadastro de Clientes</h2>
                     <FormCadClientes 
                         setExibirTabela={setExibirTabela}
                         listaClientes={listaClientes}

@@ -18,7 +18,6 @@ export default function Menu(props) {
                         <NavDropdown title="Cadastros" id="basic-nav-dropdown">
                             <NavDropdown.Item><Link to="/clientes">Clientes</Link></NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Divider />
                             <NavDropdown.Item><Link to="/treino">Tipo de Treino</Link></NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link href="#" onClick={() => {

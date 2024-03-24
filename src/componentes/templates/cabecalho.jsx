@@ -1,4 +1,3 @@
-//Lembrar que em React os componentes devem começar com letras maiúsculas
 import { Alert } from "react-bootstrap";
 import { ContextoUsuario } from "../contexto/Contexto";
 import { useContext } from "react";

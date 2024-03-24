@@ -12,7 +12,6 @@ export default function FormCadTreino(props){
     });
 
     function manipularMudanca(evento) {
-        //extrair do evento onChange quem provocou a sua ocorrência
         const componente = evento.currentTarget;
         setTreino({ ...treino, [componente.name]: componente.value });
     }

@@ -5,8 +5,6 @@ import Row from 'react-bootstrap/Row';
 import { useState } from 'react';
 
 export default function FormCadClientes(props) {
-    //Conceito de estado de um componente React
-    //O estado de um componente React é preservado independete de quantas vezes o componente foi renderizado (reiniciado)
     const [validado, setValidado] = useState(false);
     const [cliente, setCliente] = useState({
         nome: "",
@@ -17,7 +15,6 @@ export default function FormCadClientes(props) {
     });
 
     function manipularMudanca(evento) {
-        //extrair do evento onChange quem provocou a sua ocorrência
         const componente = evento.currentTarget;
         setCliente({ ...cliente, [componente.name]: componente.value });
     }
@@ -31,10 +28,7 @@ export default function FormCadClientes(props) {
         }
         else{
             setValidado(false);
-            //todo
-            //adicionar cliente em uma lista se os dados estiverem corretos
             props.setListaClientes([...props.listaClientes, cliente]);
-            //depois de adicionar um novo cliente voltar a exibir a tabela
             props.setExibirTabela(true);
             
         }
@@ -60,7 +54,7 @@ export default function FormCadClientes(props) {
                     <Form.Control
                         required
                         type="text"
-                        placeholder="Last name"
+                        placeholder="Sobrenome"
                         id="sobrenome"
                         name="sobrenome"
                         value={cliente.sobrenome}

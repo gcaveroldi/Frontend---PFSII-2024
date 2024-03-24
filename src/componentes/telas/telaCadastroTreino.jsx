@@ -25,7 +25,7 @@ export default function TelaCadastroTreino(props) {
                 <Pagina>
                     <h1>Cadastro de Treinos</h1>
                     <br/>
-                    <h2>Formulário de cadastro de Treinos</h2>
+                    <h2>Formulário de Cadastro de Treinos</h2>
                     <FormCadTreino 
                         setExibirTabela={setExibirTabela}
                         listaTreino={listaTreino}
