@@ -1,5 +1,5 @@
 import { Button, Table } from "react-bootstrap";
-export default function TabelaProdutos(props) {
+export default function TabelaTreino(props) {
     return (
         <div>
             <Button onClick={() => {
@@ -16,11 +16,11 @@ export default function TabelaProdutos(props) {
                 </thead>
                 <tbody>
                     {
-                        props.listaProdutos?.map((produto, index) => {
+                        props.listaTreino?.map((treino, index) => {
                             return (
-                                <tr key={produto.codigo}>
-                                    <td>{produto.codigo}</td>
-                                    <td>{produto.categoria.descricao}</td>
+                                <tr key={treino.codigo}>
+                                    <td>{treino.codigo}</td>
+                                    <td>{treino.categoria.descricao}</td>
                                 </tr>
                             )
                         })

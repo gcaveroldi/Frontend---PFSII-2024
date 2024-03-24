@@ -1,11 +1,11 @@
-import FormCadProdutos from "../formularios/formCadProdutos";
-import TabelaProdutos from "../tabelas/tabelaProdutos";
+import FormCadTreino from "../formularios/formCadTreino";
+import TabelaTreino from "../tabelas/tabelaTreino";
 import Pagina from "../templates/pagina";
 import { useState } from "react";
 
-export default function TelaCadastroProduto(props) {
+export default function TelaCadastroTreino(props) {
     const [exibirTabela, setExibirTabela] = useState(true);
-    const [listaProdutos, setListaProdutos] = useState([]);
+    const [listaTreino, setListaTreino] = useState([]);
 
     if (exibirTabela) {
         return (
@@ -14,7 +14,7 @@ export default function TelaCadastroProduto(props) {
                     <h1>Cadastro de Treinos</h1>
                     <br/>
                     <h2>Lista de Treinos</h2>
-                    <TabelaProdutos listaProdutos={listaProdutos} setExibirTabela={setExibirTabela} />
+                    <TabelaTreino listaTreino={listaTreino} setExibirTabela={setExibirTabela} />
                 </Pagina>
             </div>
         )
@@ -26,10 +26,10 @@ export default function TelaCadastroProduto(props) {
                     <h1>Cadastro de Treinos</h1>
                     <br/>
                     <h2>Formulário de cadastro de Treinos</h2>
-                    <FormCadProdutos 
+                    <FormCadTreino 
                         setExibirTabela={setExibirTabela}
-                        listaProdutos={listaProdutos}
-                        setListaProdutos={setListaProdutos}
+                        listaTreino={listaTreino}
+                        setListaTreino={setListaTreino}
                      />
                 </Pagina>
             </div>
