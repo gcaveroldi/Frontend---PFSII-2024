@@ -9,6 +9,7 @@ export default function TabelaTreino(props) {
             </Button>
             <Table striped bordered hover >
                 <thead>
+                <br></br>
                     <tr>
                         <th>Código</th>
                         <th>Categoria</th>

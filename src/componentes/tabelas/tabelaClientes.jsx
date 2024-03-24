@@ -7,8 +7,10 @@ export default function TabelaClientes(props) {
             }}>
                 Cadastrar Novo Cliente
             </Button>
+            <br></br>
             <Table striped bordered hover >
                 <thead>
+                <br></br>
                     <tr>
                         <th>Id</th>
                         <th>Nome</th>
